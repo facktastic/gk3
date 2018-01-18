@@ -11,6 +11,7 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { reportsComponent } from './components/reports/reports.component';
 import { profileComponent } from './components/profile/profile.component';
+import { loginComponent } from './components/login/login.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import { profileComponent } from './components/profile/profile.component';
         FetchDataComponent,
         reportsComponent,
         profileComponent,
-        HomeComponent
+        HomeComponent,
+        loginComponent
     ],
     imports: [
         CommonModule,
@@ -29,6 +31,7 @@ import { profileComponent } from './components/profile/profile.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'login', component: loginComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'profile', component: profileComponent },
